@@ -1,0 +1,36 @@
+feature_name,business_definition,source_column,data_type,role,decision,privacy_classification,product_owner_rationale
+Age,Employee age in years,Age,numeric,fairness_review,exclude_primary_model,sensitive,Protected or sensitive characteristic; retain separately only for approved fairness evaluation
+Attrition,Whether the employee left,Attrition,categorical,target,label_only,confidential_hr,Outcome to predict and never a model input
+BusinessTravel,Frequency of business travel,BusinessTravel,categorical,feature,include,confidential_hr,Potentially relevant work-condition indicator
+DailyRate,Synthetic daily-rate measure,DailyRate,numeric,unsupported,exclude,confidential_hr,Business meaning is unclear and it is not documented as actual compensation
+Department,Organizational department,Department,categorical,feature,include,confidential_hr,Supports aggregate organizational patterns
+DistanceFromHome,Distance between home and work,DistanceFromHome,numeric,feature,include,confidential_hr,Approved commuting-distance indicator in this educational prototype
+Education,Education attainment code,Education,numeric,feature,include,confidential_hr,Job-background indicator requiring coded-value documentation
+EducationField,Field of education,EducationField,categorical,feature,include,confidential_hr,Job-background category
+EmployeeCount,Constant technical field,EmployeeCount,numeric,constant,exclude,technical,Same value for every record and contains no predictive information
+EmployeeNumber,Unique employee identifier,EmployeeNumber,numeric,identifier,exclude,direct_identifier,Identifier could let the model memorize records and has no causal business meaning
+EnvironmentSatisfaction,Environment satisfaction score,EnvironmentSatisfaction,numeric,feature,include,confidential_hr,Approved employee-experience measure in the synthetic dataset
+Gender,Reported gender category,Gender,categorical,fairness_review,exclude_primary_model,sensitive,Protected or sensitive characteristic; retain separately only for approved fairness evaluation
+HourlyRate,Synthetic hourly-rate measure,HourlyRate,numeric,unsupported,exclude,confidential_hr,Business meaning is unclear and it is not documented as actual compensation
+JobInvolvement,Job involvement score,JobInvolvement,numeric,feature,include,confidential_hr,Approved engagement indicator
+JobLevel,Organizational job level,JobLevel,numeric,feature,include,confidential_hr,Represents position in the job hierarchy
+JobRole,Employee job role,JobRole,categorical,feature,include,confidential_hr,Supports role-level workforce patterns
+JobSatisfaction,Job satisfaction score,JobSatisfaction,numeric,feature,include,confidential_hr,Approved employee-experience measure
+MaritalStatus,Reported marital status,MaritalStatus,categorical,fairness_review,exclude_primary_model,sensitive,Personal characteristic excluded from primary model
+MonthlyIncome,Monthly income amount,MonthlyIncome,numeric,feature,include,restricted_hr,Potential compensation-position indicator requiring strict access and fairness review
+MonthlyRate,Synthetic monthly-rate measure,MonthlyRate,numeric,unsupported,exclude,confidential_hr,Business meaning is unclear and it is not documented as actual compensation
+NumCompaniesWorked,Prior companies worked for,NumCompaniesWorked,numeric,feature,include,confidential_hr,Employment-history indicator
+Over18,Constant adult-status field,Over18,categorical,constant,exclude,technical,Same value for every record and contains no predictive information
+OverTime,Whether employee works overtime,OverTime,categorical,feature,include,confidential_hr,Approved workload indicator
+PercentSalaryHike,Most recent salary increase percentage,PercentSalaryHike,numeric,feature,include,restricted_hr,Compensation-change indicator requiring restricted access
+PerformanceRating,Performance-rating code,PerformanceRating,numeric,feature,include,restricted_hr,Sensitive employment measure requiring governance and fairness review
+RelationshipSatisfaction,Relationship satisfaction score,RelationshipSatisfaction,numeric,feature,include,confidential_hr,Approved experience indicator in this educational prototype
+StandardHours,Constant standard-hours field,StandardHours,numeric,constant,exclude,technical,Same value for every record and contains no predictive information
+StockOptionLevel,Stock-option level code,StockOptionLevel,numeric,feature,include,restricted_hr,Approved rewards indicator requiring restricted access
+TotalWorkingYears,Total career experience,TotalWorkingYears,numeric,feature,include,confidential_hr,Employment-tenure indicator
+TrainingTimesLastYear,Training events in previous year,TrainingTimesLastYear,numeric,feature,include,confidential_hr,Learning and development indicator
+WorkLifeBalance,Work-life balance score,WorkLifeBalance,numeric,feature,include,confidential_hr,Approved employee-experience measure
+YearsAtCompany,Completed years at current company,YearsAtCompany,numeric,feature,include,confidential_hr,Core tenure feature
+YearsInCurrentRole,Completed years in current role,YearsInCurrentRole,numeric,feature,include,confidential_hr,Role-tenure feature
+YearsSinceLastPromotion,Completed years since last promotion,YearsSinceLastPromotion,numeric,feature,include,confidential_hr,Career-movement feature
+YearsWithCurrManager,Completed years with current manager,YearsWithCurrManager,numeric,feature,include,confidential_hr,Manager-continuity feature
