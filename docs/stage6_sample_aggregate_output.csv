@@ -1,0 +1,4 @@
+Department,employees,high_risk_count,average_predicted_probability,high_risk_rate,reporting_status
+Human Resources,63,9.0,0.41212511679358765,0.14285714285714285,reported
+Research & Development,961,97.0,0.3342105116493276,0.10093652445369407,reported
+Sales,446,82.0,0.4422815215851666,0.18385650224215247,reported
