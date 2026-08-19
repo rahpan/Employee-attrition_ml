@@ -19,6 +19,7 @@ The project uses the public **IBM HR Analytics Employee Attrition & Performance*
 - Stage 5 — threshold policy, final test, explainability, fairness review
 - Stage 6 — packaging, aggregate scoring, monitoring, production architecture
 - Stage 7 — privacy-safe interactive Streamlit dashboard
+- Stage 8 — governed agent policy, deterministic recommendations, HR approval gate, simulated tasks, audit trail
 
 ## Project layout
 
@@ -47,3 +48,11 @@ streamlit run streamlit_app.py
 ```
 
 The dashboard shows aggregate department-level indicators only. It does not display EmployeeNumber or individual risk scores.
+
+## Run the governed Stage 8 simulation
+
+```bash
+python -m src.stage8_orchestrator
+```
+
+The simulation reads only aggregate department output, requires HR approval for interventions, creates simulated tasks, and writes a privacy-safe local audit log.
