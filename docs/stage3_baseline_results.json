@@ -1,0 +1,24 @@
+{
+  "split_manifest": {
+    "random_state": 42,
+    "method": "stratified random split for synthetic snapshot teaching data",
+    "counts": {"train": 1029, "validation": 220, "test": 221},
+    "attrition_rates": {
+      "train": 0.16132167152575316,
+      "validation": 0.1590909090909091,
+      "test": 0.16289592760180996
+    },
+    "employee_overlap": 0
+  },
+  "transformed_shapes": {"train": [1029, 42], "validation": [220, 42]},
+  "preprocessor_fit_population": "training only",
+  "baseline_validation_metrics": {
+    "accuracy": 0.8409090909090909,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": 0.5,
+    "pr_auc": 0.1590909090909091
+  },
+  "test_set_status": "untouched"
+}
